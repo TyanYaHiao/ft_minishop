@@ -1,4 +1,36 @@
 .product_block {
-	width: 30%;
-
+	width: 31%;
+	float: left;
+	padding-left: 1%;
+	padding-right: 1%;
+	min-width: 400px;
+}
+.product_block img {
+	width: 100%;
+}
+.product_title {
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.product_ {
+	font-family: Helvetica, sans-serif;
+	text-align: left;
+}
+.description {
+	color: black;
+	font-size: 14px;
+}
+.specifications {
+	color: gray;
+	font-size: 12px;
+}
+.delimiter {
+	height: 1px;
+	background-color: lightgray;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
