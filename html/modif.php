@@ -1,7 +1,6 @@
 <?php
 	$array = [];
 	
-	
 	if (!(file_exists("../ex01/private"))) {
 		exit("ERROR\n");
 	}

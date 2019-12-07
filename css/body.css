@@ -1,0 +1,37 @@
+.clearfix:after {
+    content:'';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+.response {
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+}
+.container{
+    /*padding-top: 5vh;*/
+    padding-bottom: 5vh;
+    width: 80%;
+    margin: 10% 10% 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
