@@ -16,7 +16,7 @@
     margin: 10% 10% 0 10%;
     display: flex;
     flex-wrap: wrap;
-    background-color: #0b2e13;
+    background-color: white;
 }
 .top p{
     color:white;
@@ -24,7 +24,7 @@
     margin-left: 45%;
 }
 .log{
-margin-left: 35%;
+    margin-left: 35%;
 
 }
 .hamburger-menu{
