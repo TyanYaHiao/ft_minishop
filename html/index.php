@@ -163,7 +163,9 @@
 	    }
 	    echo "<div id='A6' class='product_block response clearfix' style='".$exist."'>";
 	    ?>
+            <a href="cardA6.php">
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a6/my-2019/1920x1080-gal-prop/1920x1080_desktop_%20CLASSIC_M01_SEDAN_COMP_09_FINAL_FLAT.jpg" alt="A6">
+		    </a>
             <div class="product_title">
                 Audi A6
             </div>
@@ -215,7 +217,9 @@
 	    }
 	    echo "<div id='A8' class='product_block response clearfix' style='".$exist."'>";
 	    ?>
+            <a href="cardQ8.php">
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a8/my2019/desktop/1920x1080_teaser_AA8_171002.jpg" alt="A8">
+		    </a>
             <div class="product_title">
                 Audi A8
             </div>
@@ -351,7 +355,9 @@
 	    }
 	    echo "<div id='RS6' class='product_block response clearfix' style='".$exist."'>";
 	    ?>
+            <a href="cardRS6.php">
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/audi-sport/r-rs-serial-models/rs6-avant/1920x1080-desktop-ARS6_191013.jpg" alt="RS6">
+		    </a>
             <div class="product_title">
                 Audi RS 6
             </div>

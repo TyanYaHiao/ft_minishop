@@ -58,7 +58,9 @@
 	    }
 	    echo "<div id='RS6' class='product_block response clearfix' style='".$exist."'>";
 	    ?>
-            <img src="https://www.audi.com/content/dam/gbp2/experience-audi/audi-sport/r-rs-serial-models/rs6-avant/1920x1080-desktop-ARS6_191013.jpg" alt="RS6">
+		    <a href="cardRS6.php">
+			    <img src="https://www.audi.com/content/dam/gbp2/experience-audi/audi-sport/r-rs-serial-models/rs6-avant/1920x1080-desktop-ARS6_191013.jpg" alt="RS6">
+		    </a>
             <div class="product_title">
                 Audi RS 6
             </div>

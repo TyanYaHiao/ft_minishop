@@ -110,7 +110,9 @@
 	    }
 	    echo "<div id='Q8' class='product_block response clearfix' style='".$exist."'>";
 	    ?>
-            <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/q8/my2019/1920x1080-gal-prop-tx/1920x1080_desktop_AQ8_181006.jpg" alt="Q8">
+		    <a href="cardQ8.php">
+			    <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a8/my2019/desktop/1920x1080_teaser_AA8_171002.jpg" alt="A8">
+		    </a>
             <div class="product_title">
                 Audi Q8
             </div>

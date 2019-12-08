@@ -162,7 +162,9 @@
 	    }
 	    echo "<div id='A6' class='product_block response clearfix' style='".$exist."'>";
 	    ?>
-            <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a6/my-2019/1920x1080-gal-prop/1920x1080_desktop_%20CLASSIC_M01_SEDAN_COMP_09_FINAL_FLAT.jpg" alt="A6">
+		    <a href="cardA6.php">
+			    <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a6/my-2019/1920x1080-gal-prop/1920x1080_desktop_%20CLASSIC_M01_SEDAN_COMP_09_FINAL_FLAT.jpg" alt="A6">
+		    </a>
             <div class="product_title">
                 Audi A6
             </div>
