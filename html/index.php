@@ -68,7 +68,6 @@
 		        echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A1\' value=\'Add to cart\'></form>";
             }
 		    ?>
-
         </div>
 	    <?php
 	    if (check('A3')) {
@@ -90,9 +89,11 @@
                 Fuel consumption combined*: 6.6–3.5 l/100km<br> CO₂-emissions combined*: 149–111 g/km
             </div>
             <div class="cost">from €24,300</div>
-            <form method="POST" action="changehtml.php">
-                <input class="button_add_to_cart" type="submit" name="A3" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION[$loggued_on_user]) {
+			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A3\' value=\'Add to cart\'></form>";
+		    }
+		    ?>
         </div>
 	    <?php
 	    if (check('A4')) {
@@ -114,9 +115,11 @@
                 Fuel consumption combined*: 6.8–3.8 l/100km<br> CO₂-emissions combined*: 160–100 g/km
             </div>
             <div class="cost">from €30,200</div>
-            <form method="post" action="changehtml.php">
-                <input class="button_add_to_cart" type="submit" name="A4" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION[$loggued_on_user]) {
+			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A4\' value=\'Add to cart\'></form>";
+		    }
+		    ?>
         </div>
 	    <?php
 	    if (check('A5')) {
@@ -138,9 +141,11 @@
                 Fuel consumption combined*: 6–3.7 l/100km<br> CO₂-emissions combined*: 158–98 g/km
             </div>
             <div class="cost">from €35,500</div>
-            <form method="post" action="changehtml.php">
-                <input class="button_add_to_cart" type="submit" name="A5" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION[$loggued_on_user]) {
+			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A5\' value=\'Add to cart\'></form>";
+		    }
+		    ?>
         </div>
 	    <?php
 	    if (check('A6')) {
@@ -162,9 +167,11 @@
                 Fuel consumption combined*: 7.6–4.1 l/100km<br> CO₂-emissions combined*: 174–108 g/km
             </div>
             <div class="cost">from €46,800</div>
-            <form method="post" action="changehtml.php">
-                <input class="button_add_to_cart" type="submit" name="A6" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION[$loggued_on_user]) {
+			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A6\' value=\'Add to cart\'></form>";
+		    }
+		    ?>
         </div>
 	    <?php
 	    if (check('A7')) {
@@ -186,9 +193,11 @@
                 Fuel consumption combined*: 7.5–4.4 l/100km<br> CO₂-emissions combined*: 172–117 g/km
             </div>
             <div class="cost">from €56,800</div>
-            <form method="post" action="changehtml.php">
-                <input class="button_add_to_cart" type="submit" name="A7" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION[$loggued_on_user]) {
+			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A7\' value=\'Add to cart\'></form>";
+		    }
+		    ?>
         </div>
 	    <?php
 	    if (check('A8')) {
@@ -210,9 +219,11 @@
                 Fuel consumption combined*: 8.3–5.7 l/100km<br> CO₂-emissions combined*: 189–151 g/km
             </div>
             <div class="cost">from €73,100</div>
-            <form method="post" action="changehtml.php">
-                <input class="button_add_to_cart" type="submit" name="A8" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION[$loggued_on_user]) {
+			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A8\' value=\'Add to cart\'></form>";
+		    }
+		    ?>
         </div>
 	    <?php
 	    if (check('TT')) {
@@ -234,9 +245,11 @@
                 Fuel consumption combined*: 7.0–6.0 l/100km<br> CO₂-emissions combined*: 161–137 g/km
             </div>
             <div class="cost">from €38,900</div>
-            <form method="post" action="changehtml.php">
-                <input class="button_add_to_cart" type="submit" name="TT" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION[$loggued_on_user]) {
+			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'TT\' value=\'Add to cart\'></form>";
+		    }
+		    ?>
         </div>
         <div class="heading">
             <h1>Q-serial models</h1>
@@ -261,9 +274,11 @@
                 Fuel consumption combined*: 7.6–4.7 l/100km<br> CO₂-emissions combined*: 174–123 g/km
             </div>
             <div class="cost">from €31,200</div>
-            <form method="post" action="changehtml.php">
-                <input class="button_add_to_cart" type="submit" name="Q3" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION[$loggued_on_user]) {
+			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'Q3\' value=\'Add to cart\'></form>";
+		    }
+		    ?>
         </div>
 	    <?php
 	    if (check('Q7')) {
@@ -285,9 +300,11 @@
                 Fuel consumption combined*: 9.1–6.6 l/100km<br> CO₂-emissions combined*: 208–174 g/km
             </div>
             <div class="cost">from €56,800</div>
-            <form method="post" action="changehtml.php">
-                <input class="button_add_to_cart" type="submit" name="Q7" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION[$loggued_on_user]) {
+			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'Q7\' value=\'Add to cart\'></form>";
+		    }
+		    ?>
         </div>
 	    <?php
 	    if (check('Q8')) {
@@ -309,9 +326,11 @@
                 Fuel consumption combined*: 9.1–6.5 l/100km<br> CO₂-emissions combined*: 208–172 g/km
             </div>
             <div class="cost">from €73,100</div>
-            <form method="post" action="changehtml.php">
-                <input class="button_add_to_cart" type="submit" name="Q8" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION[$loggued_on_user]) {
+			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'Q8\' value=\'Add to cart\'></form>";
+		    }
+		    ?>
         </div>
         <div class="heading">
             <h1>R-/RS serial models</h1>
@@ -336,9 +355,11 @@
                 Fuel consumption combined*: 11.7–11.5 l/100km<br> CO₂-emissions combined*: 268–263 g/km
             </div>
             <div class="cost">from €101,950</div>
-            <form method="post" action="changehtml.php">
-                <input class="button_add_to_cart" type="submit" name="RS6" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION[$loggued_on_user]) {
+			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'RS6\' value=\'Add to cart\'></form>";
+		    }
+		    ?>
         </div>
 	    <?php
 	    if (check('RS7')) {
@@ -360,9 +381,11 @@
                 Fuel consumption combined*: 11.6–11.4 l/100km<br> CO₂-emissions combined*: 265–261 g/km
             </div>
             <div class="cost">from €109,200</div>
-            <form method="post" action="changehtml.php">
-                <input class="button_add_to_cart" type="submit" name="RS7" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION[$loggued_on_user]) {
+			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'RS7\' value=\'Add to cart\'></form>";
+		    }
+		    ?>
         </div>
 	    <?php
 	    if (check('TTRS')) {
@@ -384,9 +407,11 @@
                 Fuel consumption combined*: 8.0–7.9 l/100km<br> CO₂-emissions combined*: 181 g/km
             </div>
             <div class="cost">from €61,500</div>
-            <form method="post" action="changehtml.php">
-                <input class="button_add_to_cart" type="submit" name="TT_RS" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION[$loggued_on_user]) {
+			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'TTRS\' value=\'Add to cart\'></form>";
+		    }
+		    ?>
         </div>
     </div>
     <div class="footer" id="intro-footer">
