@@ -1,8 +1,13 @@
 <?php
 	$array = [];
 	
+	if ($_POST['submit'] == 'GO BACK'){
+		include ('login.html');
+		exit();
+	}
 	if (!($_POST['passwd']) || !($_POST['login']) || !($_POST['submit'] == 'OK')) {
-		include('login.html');
+		include('createagain.html');
+		exit();
 	}
 	
 	if (!($array = unserialize(file_get_contents("../private/passwd")))){
@@ -18,7 +23,7 @@
 	{
 		if ($value["login"] == $_POST["login"]) {
 			echo "ERROR\n";
-			include('login.html');
+			include('createagain.html');
 			exit ();
 		}
 	}
@@ -29,3 +34,4 @@
 	file_put_contents("../private/passwd", serialize($array));
 	echo "OK\n";
 	include('login.html');
+	exit();
