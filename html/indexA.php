@@ -42,7 +42,7 @@
         </div>
     </div>
     <div class="heading">
-        <img src="https://www.audi.com//content/dam/gbp2/experience-audi/models-and-technology/production-models/1920x600_A189584_large_v2.jpg" alt="models">
+        <img src="https://www.audi.com/content/dam/gbp2/experience-audi/mobility-and-trends/e-mobility/2019/e-tron-summer-tour/1920x600-desktop-e-mobility-e-tron-summer-DSC1242.jpg" alt="models">
         <!--    <h1>All models</h1>-->
     </div>
     <div class="container">

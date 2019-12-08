@@ -34,7 +34,7 @@
         <div class="top_menu">
 	        <?php
 		        if ($_SESSION['loggued_on_user'] != "") {
-			        echo "<a href='logout.php' class='top_button'>Logout</a><a href='login.html' class='top_button'>Cart</a>";
+			        echo "<a href='logout.php' class='top_button'>Logout</a><a href='cart.php' class='top_button'>Cart</a>";
 		        }
 		        else{
 		            echo "<a href='login.html' class='top_button'>Login</a>";
@@ -43,7 +43,7 @@
         </div>
     </div>
     <div class="heading">
-        <img src="https://www.audi.com//content/dam/gbp2/experience-audi/models-and-technology/production-models/1920x600_A189584_large_v2.jpg" alt="models">
+        <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/1920x600_A189584_large_v2.jpg" alt="models">
         <!--    <h1>All models</h1>-->
     </div>
     <div class="container">
@@ -421,6 +421,7 @@
 		    }
 		    ?>
         </div>
+    <div class="container_wrapper"></div>
     </div>
     <div class="footer" id="intro-footer">
         <div class="footer_menu clearfix">
