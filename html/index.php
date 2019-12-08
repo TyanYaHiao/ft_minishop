@@ -1,3 +1,6 @@
+<?php
+	session_start();
+	?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,7 +49,6 @@
             } else{
 	            $exist = "display: none";
             }
-            
             echo "<div id='A1' class='product_block response clearfix' style='".$exist."'>";
         ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a1/my-2019/1920x1080-gal-prop-tx/1920x1080_desktop_AA1_181001.jpg" alt="A1">
@@ -61,9 +63,12 @@
                 Fuel consumption combined*: 6.0–4.7 l/100km <br> CO₂-emissions combined*: 137–107 g/km
             </div>
             <div class="cost">from €21,700</div>
-            <form method="post" action="changehtml.php">
-                <input class="button_add_to_cart" type="submit" name="A1" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION[$loggued_on_user]) {
+		        echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A1\' value=\'Add to cart\'></form>";
+            }
+		    ?>
+
         </div>
 	    <?php
 	    if (check('A3')) {
