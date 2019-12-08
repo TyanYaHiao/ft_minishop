@@ -19,7 +19,7 @@
 		);
 		$file_name = "../private/".$name.".csv";
 		echo $file_name;
-		$fd = fopen($file_name, 'wb');
+		$fd = fopen($file_name, 'w+');
 		
 		foreach ($cars as $fields) {
 			fputcsv($fd, $fields);
@@ -63,6 +63,8 @@
 		"passwd" => hash("whirlpool", $_POST['passwod'])
 	];
 	file_put_contents("../private/passwd", serialize($array));
+	$name = $_POST['login'];
+	new_user($name);
 	echo "OK\n";
 	include('login.html');
 	exit();
