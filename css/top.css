@@ -9,7 +9,10 @@
 	align-items: center;
 
 }
-
+.top a img {
+	height: 30px;
+	margin-left: 45vw;
+}
 .logo {
 	height: 30%;
 	margin-left: 42%;
@@ -32,8 +35,4 @@
 
 .top_button:hover {
 	text-decoration: underline;
-}
-
-.cart {
-
 }
