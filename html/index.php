@@ -65,7 +65,14 @@
                 <input class="button_add_to_cart" type="submit" name="A1" value="Add to cart">
             </form>
         </div>
-        <div id="A3" class="product_block response clearfix">
+	    <?php
+	    if (check('A3')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='A3' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a3/my-2019/1920x1080-gal-prop/AA3_SB_161001_1-1920x1080.jpg" alt="A3">
             <div class="product_title">
                 Audi A3
@@ -82,7 +89,14 @@
                 <input class="button_add_to_cart" type="submit" name="A3" value="Add to cart">
             </form>
         </div>
-        <div id="A4" class="product_block response clearfix">
+	    <?php
+	    if (check('A4')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='A4' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a4/my-2020/1920x1080_AA4_L_191010.jpg" alt="A4">
             <div class="product_title">
                 Audi A4
@@ -99,7 +113,14 @@
                 <input class="button_add_to_cart" type="submit" name="A4" value="Add to cart">
             </form>
         </div>
-        <div id="A5" class="product_block response clearfix">
+	    <?php
+	    if (check('A5')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='A5' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a5/my2020/1920x1080_teaser_AA5_SB_191007.jpg" alt="A5">
             <div class="product_title">
                 Audi A5
@@ -116,7 +137,14 @@
                 <input class="button_add_to_cart" type="submit" name="A5" value="Add to cart">
             </form>
         </div>
-        <div id="A6" class="product_block response clearfix">
+	    <?php
+	    if (check('A6')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='A6' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a6/my-2019/1920x1080-gal-prop/1920x1080_desktop_%20CLASSIC_M01_SEDAN_COMP_09_FINAL_FLAT.jpg" alt="A6">
             <div class="product_title">
                 Audi A6
@@ -133,7 +161,14 @@
                 <input class="button_add_to_cart" type="submit" name="A6" value="Add to cart">
             </form>
         </div>
-        <div id="A7" class="product_block response clearfix">
+	    <?php
+	    if (check('A7')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='A7' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a7/my2019/mobile/1920x1080_desktop_AA7_17009.jpg" alt="A7">
             <div class="product_title">
                 Audi A7
@@ -150,7 +185,14 @@
                 <input class="button_add_to_cart" type="submit" name="A7" value="Add to cart">
             </form>
         </div>
-        <div id="A8" class="product_block response clearfix">
+	    <?php
+	    if (check('A8')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='A8' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a8/my2019/desktop/1920x1080_teaser_AA8_171002.jpg" alt="A8">
             <div class="product_title">
                 Audi A8
@@ -167,7 +209,14 @@
                 <input class="button_add_to_cart" type="submit" name="A8" value="Add to cart">
             </form>
         </div>
-        <div id="TT" class="product_block response clearfix">
+	    <?php
+	    if (check('TT')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='TT' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/tt/my2019/1920x1080-gal-prop-tx/1920x1080_desktop_ATT_181005.jpg" alt="TT">
             <div class="product_title">
                 Audi TT
@@ -187,7 +236,14 @@
         <div class="heading">
             <h1>Q-serial models</h1>
         </div>
-        <div id="Q3" class="product_block response clearfix">
+	    <?php
+	    if (check('Q3')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='Q3' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/q3/my2019/1920x1080-gal-prop-tx/1920x1080_desktop_AQ3_181001.jpg" alt="Q3">
             <div class="product_title">
                 Audi Q3
@@ -204,7 +260,14 @@
                 <input class="button_add_to_cart" type="submit" name="Q3" value="Add to cart">
             </form>
         </div>
-        <div id="Q7" class="product_block response clearfix">
+	    <?php
+	    if (check('Q7')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='Q7' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/q7/my-2020/1920x1080_AQ7_191002.jpg" alt="Q7">
             <div class="product_title">
                 Audi Q7
@@ -221,7 +284,14 @@
                 <input class="button_add_to_cart" type="submit" name="Q7" value="Add to cart">
             </form>
         </div>
-        <div id="Q8" class="product_block response clearfix">
+	    <?php
+	    if (check('Q8')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='Q8' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/q8/my2019/1920x1080-gal-prop-tx/1920x1080_desktop_AQ8_181006.jpg" alt="Q8">
             <div class="product_title">
                 Audi Q8
@@ -241,7 +311,14 @@
         <div class="heading">
             <h1>R-/RS serial models</h1>
         </div>
-        <div id="RS6" class="product_block response clearfix">
+	    <?php
+	    if (check('RS6')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='RS6' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/audi-sport/r-rs-serial-models/rs6-avant/1920x1080-desktop-ARS6_191013.jpg" alt="RS6">
             <div class="product_title">
                 Audi RS 6
@@ -258,7 +335,14 @@
                 <input class="button_add_to_cart" type="submit" name="RS6" value="Add to cart">
             </form>
         </div>
-        <div id="RS7" class="product_block response clearfix">
+	    <?php
+	    if (check('RS7')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='RS7' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com//content/dam/gbp2/experience-audi/audi-sport/r-rs-serial-models/rs7_sportback/my2020/1920x1080_stage-mobile_ARS7_191005.jpg" alt="RS7">
             <div class="product_title">
                 Audi RS 7
@@ -275,7 +359,14 @@
                 <input class="button_add_to_cart" type="submit" name="RS7" value="Add to cart">
             </form>
         </div>
-        <div id="TT RS" class="product_block response clearfix">
+	    <?php
+	    if (check('TTRS')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='TTRS' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/audi-sport/r-rs-serial-models/tt-rs/Teaser.jpg" alt="TT RS">
             <div class="product_title">
                 Audi TT RS
