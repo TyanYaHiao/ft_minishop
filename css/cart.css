@@ -1,0 +1,10 @@
+.product_cart_block {
+	width: 61%;
+	padding: 1%;
+	float: left;
+	min-width: 400px;
+	border-radius: 3px;
+}
+.product_cart_block img {
+	width: 100%;
+}
