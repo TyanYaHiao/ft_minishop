@@ -49,77 +49,77 @@
     }
 	if ($_POST['A3'] == 'Add to cart'){
 		do_cars('A3', '-');
-	    do_cars_user('A1', $_SESSION['loggued_on_user']);
+	    do_cars_user('A3', $_SESSION['loggued_on_user']);
 		include ('index.php');
 		exit();
 	}
 	if ($_POST['A4'] == 'Add to cart'){
 		do_cars('A4', '-');
-	    do_cars_user('A1', $_SESSION['loggued_on_user']);
+	    do_cars_user('A4', $_SESSION['loggued_on_user']);
 		include ('index.php');
 		exit();
 	}if ($_POST['A5'] == 'Add to cart'){
 	do_cars('A5', '-');
-    do_cars_user('A1', $_SESSION['loggued_on_user']);
+    do_cars_user('A5', $_SESSION['loggued_on_user']);
 	include ('index.php');
 	    exit();
 	}
 	if ($_POST['A6'] == 'Add to cart'){
 	do_cars('A6', '-');
-    do_cars_user('A1', $_SESSION['loggued_on_user']);
+    do_cars_user('A6', $_SESSION['loggued_on_user']);
 	include ('index.php');
 	    exit();
 	}
 	if ($_POST['A7'] == 'Add to cart'){
 		do_cars('A7', '-');
-	    do_cars_user('A1', $_SESSION['loggued_on_user']);
+	    do_cars_user('A7', $_SESSION['loggued_on_user']);
 		include ('index.php');
 	    exit();
 	}
 	if ($_POST['A8'] == 'Add to cart'){
 		do_cars('A8', '-');
-	    do_cars_user('A1', $_SESSION['loggued_on_user']);
+	    do_cars_user('A8', $_SESSION['loggued_on_user']);
 		include ('index.php');
 	    exit();
 	}if ($_POST['TT'] == 'Add to cart'){
 	do_cars('TT', '-');
-    do_cars_user('A1', $_SESSION['loggued_on_user']);
+    do_cars_user('TT', $_SESSION['loggued_on_user']);
 	include ('index.php');
 	    exit();
 	}
 	if ($_POST['Q3'] == 'Add to cart'){
 	do_cars('Q3', '-');
-	do_cars_user('A1', $_SESSION['loggued_on_user']);
+	do_cars_user('Q3', $_SESSION['loggued_on_user']);
 	include ('index.php');
 	    exit();
 	}
 	if ($_POST['Q7'] == 'Add to cart'){
 	do_cars('Q7', '-');
-	do_cars_user('A1', $_SESSION['loggued_on_user']);
+	do_cars_user('Q7', $_SESSION['loggued_on_user']);
 	include ('index.php');
 	    exit();
 	}
 	if ($_POST['Q8'] == 'Add to cart'){
 		do_cars('Q8', '-');
-		do_cars_user('A1', $_SESSION['loggued_on_user']);
+		do_cars_user('Q8', $_SESSION['loggued_on_user']);
 		include ('index.php');
 	    exit();
 	}
 	if ($_POST['RS6'] == 'Add to cart'){
 		do_cars('RS6', '-');
-		do_cars_user('A1', $_SESSION['loggued_on_user']);
+		do_cars_user('RS6', $_SESSION['loggued_on_user']);
 		include ('index.php');
 	    exit();
 	}
 	if ($_POST['RS7'] == 'Add to cart'){
 		do_cars('RS7', '-');
-		do_cars_user('A1', $_SESSION['loggued_on_user']);
+		do_cars_user('RS7', $_SESSION['loggued_on_user']);
 		include ('index.php');
 	    exit();
 	}
 	if ($_POST['TTRS'] == 'Add to cart'){
 		do_cars('TTRS', '-');
-		do_cars_user('A1', $_SESSION['loggued_on_user']);
+		do_cars_user('TTRS', $_SESSION['loggued_on_user']);
 		include ('index.php');
 	    exit();
 	}

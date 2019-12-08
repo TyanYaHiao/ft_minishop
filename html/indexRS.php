@@ -6,7 +6,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Production Models</title>
+    <title>RS-serial Models</title>
     <link href="../css/top.css" rel="stylesheet">
     <link href="../css/hamburger.css" rel="stylesheet">
     <link href="../css/body.css" rel="stylesheet">
@@ -22,9 +22,9 @@
             <span></span>
         </label>
             <ul class="menu__box">
-                <li><a class="menu__item" href="#">A-class</a></li>
-                <li><a class="menu__item" href="#">Q-class</a></li>
-                <li><a class="menu__item" href="#">RS-class</a></li>
+                <li><a class="menu__item" href="indexA.php">A-class</a></li>
+                <li><a class="menu__item" href="indexQ.php">Q-class</a></li>
+                <li><a class="menu__item" href="indexRS.php">RS-class</a></li>
             </ul>
         </div>
 	    <a href="index.php">

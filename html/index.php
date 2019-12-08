@@ -1,4 +1,5 @@
 <?php
+	error_reporting(0);
 	session_start();
 	?>
 <!DOCTYPE html>
@@ -22,9 +23,9 @@
             <span></span>
         </label>
             <ul class="menu__box">
-                <li><a class="menu__item" href="#">A-class</a></li>
-                <li><a class="menu__item" href="#">Q-class</a></li>
-                <li><a class="menu__item" href="#">RS-class</a></li>
+                <li><a class="menu__item" href="indexA.php">A-class</a></li>
+                <li><a class="menu__item" href="indexQ.php">Q-class</a></li>
+                <li><a class="menu__item" href="indexRS.php">RS-class</a></li>
             </ul>
         </div>
 	    <a href="index.php">
