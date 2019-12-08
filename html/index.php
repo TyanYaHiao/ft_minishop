@@ -29,9 +29,14 @@
         </div>
         <img src="../img/audi_logo.png" alt="audi logo" class="logo clearfix">
         <div class="top_menu">
-            <a href="login.html" class="top_button">Logout</a>
-            <!--        Добавлять к корзине ": €[итоговая цена]"-->
-            <a href="login.html" class="top_button">Cart</a>
+	        <?php
+		        if ($_SESSION['loggued_on_user'] != "") {
+			        echo "<a href='logout.php' class='top_button'>Logout</a><a href='login.html' class='top_button'>Cart</a>";
+		        }
+		        else{
+		            echo "<a href='login.html' class='top_button'>Login</a>";
+                }
+	        ?>
         </div>
     </div>
     <div class="heading">
@@ -64,8 +69,8 @@
             </div>
             <div class="cost">from €21,700</div>
 		    <?php
-		    if ($_SESSION[$loggued_on_user]) {
-		        echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A1\' value=\'Add to cart\'></form>";
+		    if ($_SESSION['loggued_on_user']) {
+		        echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A1' value='Add to cart'></form>";
             }
 		    ?>
         </div>

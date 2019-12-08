@@ -42,7 +42,7 @@
 	if (!($array = unserialize(file_get_contents("../private/passwd")))){
 		$array[] = [
 			"login" => $_POST['login'],
-			"passwd" => hash("whirlpool", $_POST['passwod'])
+			"passwd" => hash("whirlpool", $_POST['passwd'])
 		];
 		file_put_contents("../private/passwd", serialize($array));
 		$name = $_POST['login'];
@@ -53,18 +53,16 @@
 	foreach ($array as $value)
 	{
 		if ($value["login"] == $_POST["login"]) {
-			echo "ERROR\n";
 			include('createagain.html');
 			exit ();
 		}
 	}
 	$array[] = [
 		"login" => $_POST['login'],
-		"passwd" => hash("whirlpool", $_POST['passwod'])
+		"passwd" => hash("whirlpool", $_POST['passwd'])
 	];
 	file_put_contents("../private/passwd", serialize($array));
 	$name = $_POST['login'];
 	new_user($name);
-	echo "OK\n";
 	include('login.html');
 	exit();
