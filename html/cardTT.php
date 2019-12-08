@@ -1,4 +1,5 @@
 <?php
+	error_reporting(0);
 	session_start();
 	?>
 <!DOCTYPE html>
@@ -6,12 +7,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>RS-serial Models</title>
+    <title>Audi TT</title>
     <link href="../css/top.css" rel="stylesheet">
     <link href="../css/hamburger.css" rel="stylesheet">
     <link href="../css/body.css" rel="stylesheet">
     <link href="../css/product_block.css" rel="stylesheet">
     <link href="../css/footer.css" rel="stylesheet">
+	<link href="../css/card.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,95 +44,51 @@
         </div>
     </div>
     <div class="heading">
-        <img src="https://www.audi.com/content/dam/gbp2/experience-audi/audi-sport/r-rs-serial-models/r8/r8-v10-rwd/1920x840-AR8_191035.jpg" alt="models">
+        <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/tt/my2019/1920x1080-gal-prop-tx/1920x1080_desktop_ATT_181005.jpg" alt="models">
         <!--    <h1>All models</h1>-->
     </div>
     <div class="container">
         <div class="heading">
-            <h1>R-/RS serial models</h1>
+            <h1>Audi TT</h1>
+	        <h2>The Audi TT stands for driving pleasure, design and attention to detail. The compact sports car with its sporty exterior has been developed further without forgetting its history. Distinctive details such as the characteristic round fuel filler cap with TT lettering bear witness to this. Its precise handling and powerful engines reinforce this character.</h2>
         </div>
-	    <?php
-	    include ("check_count.php");
-	    if (check('RS6')) {
-		    $exist = "display: block";
-	    } else{
-		    $exist = "display: none";
-	    }
-	    echo "<div id='RS6' class='product_block response clearfix' style='".$exist."'>";
-	    ?>
-		    <a href="cardRS6.php">
-			    <img src="https://www.audi.com/content/dam/gbp2/experience-audi/audi-sport/r-rs-serial-models/rs6-avant/1920x1080-desktop-ARS6_191013.jpg" alt="RS6">
-		    </a>
-            <div class="product_title">
-                Audi RS 6
-            </div>
-            <div class="product_ description">
-                Whether it’s for a business meeting or a family outing – say yes to the Audi RS 6 Avant.
-            </div>
-            <div class="delimiter"></div>
-            <div class="product_ specifications">
-                Fuel consumption combined*: 11.7–11.5 l/100km<br> CO₂-emissions combined*: 268–263 g/km
-            </div>
-            <div class="cost">from €101,950</div>
-		    <?php
-		    if ($_SESSION['loggued_on_user']) {
-			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='RS6' value='Add to cart'></form>";
-		    }
-		    ?>
+	    <div class="underline clearfix"></div>
+		<div class="picture">
+			<img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/tt/my2019/1920x1080-gal-prop-tx/1920x1080_desktop_ATT_181006_1.jpg" alt="TT">
+		</div>
+	    <div class="text">
+		    <h2>A design icon.</h2>
+		    <p>The Audi TT Coupé is 4.19 meters (13.7 ft) in length with a have short overhangs; their wheelbase measures 2.51 meters (8.2 ft). The Audi TT Coupé  leaves the factory on 17-inch wheels; Audi and Audi Sport optionally offer 18, 19 and 20-inch wheels.</p>
+	    </div>
+	    <div class="underline clearfix"></div>
+	    <div class="text">
+		    <h2>The light.</h2>
+		    <p> Headlights with LED or Matrix LED technology are optionally available. The dynamic turn signals are a visual highlight here.</p>
+	    </div>
+	    <div class="picture">
+		    <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/tt/my2019/1920x1080-gal-prop-tx/1920x1080_desktop_ATT_D_181019.jpg" alt="TT">
+	    </div>
+        <div class="underline clearfix"></div>
+        <div class="picture">
+			<img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/tt/my2019/1920x1080-gal-prop-tx/1920x1080_desktop_ATT_D_181014.jpg" alt="TT">
+		</div>
+	    <div class="text">
+		    <h2>Driver-oriented: das cockpit and infotainment.</h2>
+		    <p>The optionally top-of-the-line MMI navigation plus with MMI touch integrates a touchpad on the upper surface of the rotary/push-button control that recognizes handwritten input and allows zooming, for example. The MMI terminal on the center console has just six keys. The voice control system understands formulations from everyday speech.  Besides the driver-oriented Audi virtual cockpit, the basic version of the Audi TT Coupé features the multifunction steering wheel plus, with which the infotainment and voice control system can be controlled entirely using the steering wheel. Also standard are the illuminated USB ports as well as Bluetooth for wireless pairing of devices.</p>
         </div>
-	    <?php
-	    if (check('RS7')) {
-		    $exist = "display: block";
-	    } else{
-		    $exist = "display: none";
-	    }
-	    echo "<div id='RS7' class='product_block response clearfix' style='".$exist."'>";
-	    ?>
-            <img src="https://www.audi.com//content/dam/gbp2/experience-audi/audi-sport/r-rs-serial-models/rs7_sportback/my2020/1920x1080_stage-mobile_ARS7_191005.jpg" alt="RS7">
-            <div class="product_title">
-                Audi RS 7
-            </div>
-            <div class="product_ description">
-                Be wild for once, untamed, and live every moment to the full. Or would you rather make an elegant impression, poised and athletic?
-            </div>
-            <div class="delimiter"></div>
-            <div class="product_ specifications">
-                Fuel consumption combined*: 11.6–11.4 l/100km<br> CO₂-emissions combined*: 265–261 g/km
-            </div>
-            <div class="cost">from €109,200</div>
-		    <?php
-		    if ($_SESSION['loggued_on_user']) {
-			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='RS7' value='Add to cart'></form>";
-		    }
-		    ?>
-        </div>
-	    <?php
-	    if (check('TTRS')) {
-		    $exist = "display: block";
-	    } else{
-		    $exist = "display: none";
-	    }
-	    echo "<div id='TTRS' class='product_block response clearfix' style='".$exist."'>";
-	    ?>
-            <img src="https://www.audi.com/content/dam/gbp2/experience-audi/audi-sport/r-rs-serial-models/tt-rs/Teaser.jpg" alt="TT RS">
-            <div class="product_title">
-                Audi TT RS
-            </div>
-            <div class="product_ description">
-                Being well prepared means mastering numerous disciplines. The new Audi TT RS manages to do that with ease.
-            </div>
-            <div class="delimiter"></div>
-            <div class="product_ specifications">
-                Fuel consumption combined*: 8.0–7.9 l/100km<br> CO₂-emissions combined*: 181 g/km
-            </div>
-            <div class="cost">from €61,500</div>
-		    <?php
-		    if ($_SESSION['loggued_on_user']) {
-			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='TTRS' value='Add to cart'></form>";
-		    }
-		    ?>
-        </div>
+        <div class="underline clearfix"></div>
+        <div class="picture">
+			<img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/tt/my2019/1920x1080-gal-prop-tx/1920x1080-ATTS_181002.jpg" alt="TT">
+		</div>
+	    <div class="text">
+		    <h2>The Audi TTS Coupé.</h2>
+		    <p>Feel the pure power, experience dynamic handling and enjoy the sporty exterior and interior design – this is the new version of the Audi TTS Coupé.
+
+Three letters - one promise. The Audi TTS Coupé is a visual eye-catcher with its unique design language and a technological pioneer with its powerful acceleration. And this already in the third generation.</p>
+	    </div>
+    <div class="container_wrapper"></div>
     </div>
+    
     <div class="footer" id="intro-footer">
         <div class="footer_menu clearfix">
             <a class="footer_link" href="https://www.facebook.com/Audi.AG">
