@@ -413,6 +413,7 @@
 		    }
 		    ?>
         </div>
+    <div class="container_wrapper"></div>
     </div>
     <div class="footer" id="intro-footer">
         <div class="footer_menu clearfix">
