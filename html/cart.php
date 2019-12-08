@@ -15,7 +15,7 @@
 <body>
 <div class="top" id="intro-top">
 	<a href="index.php">
-		<img src="../img/audi_logo.png" alt="audi logo" class="logo clearfix">
+		<img src="../img/audi_logo.png" alt="audi logo" class="logo clearfix" style="margin-left: 49.89vw">
 	</a>
 	<div class="top_menu">
 		<?php
