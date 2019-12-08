@@ -1,19 +1,26 @@
 .clearfix:after {
-    content:'';
+    content: '';
     display: table;
     width: 100%;
     clear: both;
 }
+
 .response {
-    -webkit-transition: all 0.3s ease;;
-    -moz-transition: all 0.3s ease;;
-    -o-transition: all 0.3s ease;;
+    -webkit-transition: all 0.3s ease;
+    ;
+    -moz-transition: all 0.3s ease;
+    ;
+    -o-transition: all 0.3s ease;
+    ;
     transition: all 0.3s ease;
 }
+
 body {
     margin: 0;
+    min-width: 1611px;
 }
-.container{
+
+.container {
     /*padding-top: 5vh;*/
     padding-bottom: 5vh;
     width: 80%;
@@ -22,13 +29,16 @@ body {
     flex-wrap: wrap;
     background-color: white;
 }
+
 .heading {
     width: 100%;
     margin: 0 auto;
 }
+
 .heading img {
     width: 100%;
 }
+
 h1 {
     font-family: Helvetica, sans-serif;
     font-size: 36px;
