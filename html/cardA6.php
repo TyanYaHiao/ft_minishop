@@ -71,17 +71,40 @@
 	    </div>
 	    <div class="underline clearfix"></div>
 	    <div class="text">
-		    <h2>A clear statement: the Audi A6 Saloon</h2>
-		    <p>From the widened single frame over the side air intakes with sporty chrome trim to the narrow
-			    headlights – the front of the A6 Saloon will impress you with its progressive nature at first glance.
-			    The sharpened shoulder line with the strong curves over the wheel arches emphasise the quattro genes.
-			    The coupé-like flowing roofline flows into the rear end, formed in three dimensions with a
-			    characteristic aluminium style.</p>
+		    <h2>Off-road-competent: the Audi A6 allroad quattro</h2>
+		    <p>Both visually and technically, the Audi A6 allroad quattro is clearly identifiable as an off-roader.
+			    In the exterior, among other things, there is the single-frame grill with vertical struts,
+			    colour-highlighted wheel arch and an allroad-specific rear diffuser. Below the surface, the quattro
+			    standard all-wheel drive with ultra-technology and the standard air suspension with adaptive dampers
+			    ensure good traction, high safety and agile handling – regardless of the road surface. </p>
 	    </div>
 	    <div class="picture">
-		    <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a6/my-2019/1920x1080-gal-prop/1920x1080_desktop_AA6_L_181012.jpg" alt="A6">
+		    <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a6/my-2020/1920x1080_AA6_181015_1.jpg" alt="A6">
 	    </div>
 	    <div class="underline clearfix"></div>
+	    <div class="picture">
+		    <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a6/my-2020/1920x1080_desktop_AA6_TFSIe_191001_RGB.jpg" alt="A6">
+	    </div>
+	    <div class="text">
+		    <h2>Innovatively driven: the Audi A6 Saloon TFSI e</h2>
+		    <p>The Audi A6 Saloon TFSI e extends the A6 series with a plug-in hybrid vehicle. The special feature is
+			    the drive system: thanks to the combination of electric motor and combustion engine, you can be both
+			    efficient and locally emission-free on the road, as well as using the high-performance system power up
+			    to 270 kW (367 hp) for sporty rides. Sporty elements in the exterior and interior also contribute to
+			    the innovative business saloon's dynamic look.</p>
+	    </div>
+	    <div class="underline clearfix"></div>
+	    <div class="text">
+		    <h2>Versatile powerhouses: the S-models</h2>
+		    <p>The Audi S6 Saloon TDI and the Audi S6 Avant TDI will win you over with their multi-talented sportiness.
+			    With a full range of in-car technologies in the areas of infotainment and driver assistance systems, a
+			    dynamically focused exterior, and last but not least the 257 kW (349 hp) V6 TDI engine, you're well
+			    prepared for a variety of activities – whether you're on a family outing in the mountains or taking
+			    longer business trips.</p>
+	    </div>
+	    <div class="picture">
+		    <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a6/my-2019/1920x1080-gal-prop/1920x1080_AS6_A_181006.jpg" alt="A6">
+	    </div>
     <div class="container_wrapper"></div>
     </div>
     <div class="footer" id="intro-footer">

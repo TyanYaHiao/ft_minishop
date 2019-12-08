@@ -1,12 +1,14 @@
 .picture {
-	width: 60%;
+	width: 70%;
 }
 
 .text {
-	width: 40%
+	width: 30%
 }
 
 .text h2 {
+	margin-left: 10%;
+	margin-right: 10%;
 	margin-top: 20%;
 }
 
