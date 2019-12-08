@@ -4,6 +4,10 @@
 		exit();
 	}
 	$array = unserialize(file_get_contents("../private/passwd"));
+//	$result=array_search($_POST['login'],$array,true);
+//	if($result !== false) {
+//		unset($array[$result]);
+//	}
 	foreach ($array as &$value)
 	{
 		if ($value["login"] == $_POST["login"]) {
