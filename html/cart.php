@@ -1,3 +1,7 @@
+<?php
+ session_start();
+ error_reporting(0);
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,8 +40,8 @@
 		<h1>Cart</h1>
 	</div>
 	<?php
-	include ("check_count.php");
-	if (check('A1')) {
+	include ("check_count_us.php");
+	if (check2('A1')) {
 		$exist = "display: block";
 	} else{
 		$exist = "display: none";
@@ -58,12 +62,12 @@
 	<div class="cost">from €21,700</div>
 	<?php
 	if ($_SESSION['loggued_on_user']) {
-		echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A1' value='Delete from cart'></form>";
+		echo "<form method='post' action='changehtml2.php'><input class='button_add_to_cart' type='submit' name='A1' value='Delete from cart'></form>";
 	}
 	?>
 </div>
 <?php
-if (check('A3')) {
+if (check2('A3')) {
 	$exist = "display: block";
 } else{
 	$exist = "display: none";
@@ -84,12 +88,12 @@ echo "<div id='A3' class='product_cart_block response clearfix' style='".$exist.
 <div class="cost">from €24,300</div>
 <?php
 if ($_SESSION['loggued_on_user']) {
-	echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A3' value='Delete from cart'></form>";
+	echo "<form method='post' action='changehtml2.php'><input class='button_add_to_cart' type='submit' name='A3' value='Delete from cart'></form>";
 }
 ?>
 </div>
 <?php
-if (check('A4')) {
+if (check2('A4')) {
 	$exist = "display: block";
 } else{
 	$exist = "display: none";
@@ -110,12 +114,12 @@ echo "<div id='A4' class='product_cart_block response clearfix' style='".$exist.
 <div class="cost">from €30,200</div>
 <?php
 if ($_SESSION['loggued_on_user']) {
-	echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A4' value='Delete from cart'></form>";
+	echo "<form method='post' action='changehtml2.php'><input class='button_add_to_cart' type='submit' name='A4' value='Delete from cart'></form>";
 }
 ?>
 </div>
 <?php
-if (check('A5')) {
+if (check2('A5')) {
 	$exist = "display: block";
 } else{
 	$exist = "display: none";
@@ -136,12 +140,12 @@ echo "<div id='A5' class='product_cart_block response clearfix' style='".$exist.
 <div class="cost">from €35,500</div>
 <?php
 if ($_SESSION['loggued_on_user']) {
-	echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A5' value='Delete from cart'></form>";
+	echo "<form method='post' action='changehtml2.php'><input class='button_add_to_cart' type='submit' name='A5' value='Delete from cart'></form>";
 }
 ?>
 </div>
 <?php
-if (check('A6')) {
+if (check2('A6')) {
 	$exist = "display: block";
 } else{
 	$exist = "display: none";
@@ -162,12 +166,12 @@ echo "<div id='A6' class='product_cart_block response clearfix' style='".$exist.
 <div class="cost">from €46,800</div>
 <?php
 if ($_SESSION['loggued_on_user']) {
-	echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A6' value='Delete from cart'></form>";
+	echo "<form method='post' action='changehtml2.php'><input class='button_add_to_cart' type='submit' name='A6' value='Delete from cart'></form>";
 }
 ?>
 </div>
 <?php
-if (check('A7')) {
+if (check2('A7')) {
 	$exist = "display: block";
 } else{
 	$exist = "display: none";
@@ -188,12 +192,12 @@ echo "<div id='A7' class='product_cart_block response clearfix' style='".$exist.
 <div class="cost">from €56,800</div>
 <?php
 if ($_SESSION['loggued_on_user']) {
-	echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A7' value='Delete from cart'></form>";
+	echo "<form method='post' action='changehtml2.php'><input class='button_add_to_cart' type='submit' name='A7' value='Delete from cart'></form>";
 }
 ?>
 </div>
 <?php
-if (check('A8')) {
+if (check2('A8')) {
 	$exist = "display: block";
 } else{
 	$exist = "display: none";
@@ -214,12 +218,12 @@ echo "<div id='A8' class='product_cart_block response clearfix' style='".$exist.
 <div class="cost">from €73,100</div>
 <?php
 if ($_SESSION['loggued_on_user']) {
-	echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A8' value='Delete from cart'></form>";
+	echo "<form method='post' action='changehtml2.php'><input class='button_add_to_cart' type='submit' name='A8' value='Delete from cart'></form>";
 }
 ?>
 </div>
 <?php
-if (check('TT')) {
+if (check2('TT')) {
 	$exist = "display: block";
 } else{
 	$exist = "display: none";
@@ -240,12 +244,12 @@ echo "<div id='TT' class='product_cart_block response clearfix' style='".$exist.
 <div class="cost">from €38,900</div>
 <?php
 if ($_SESSION['loggued_on_user']) {
-	echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='TT' value='Delete from cart'></form>";
+	echo "<form method='post' action='changehtml2.php'><input class='button_add_to_cart' type='submit' name='TT' value='Delete from cart'></form>";
 }
 ?>
 </div>
 <?php
-if (check('Q3')) {
+if (check2('Q3')) {
 	$exist = "display: block";
 } else{
 	$exist = "display: none";
@@ -266,12 +270,12 @@ echo "<div id='Q3' class='product_cart_block response clearfix' style='".$exist.
 <div class="cost">from €31,200</div>
 <?php
 if ($_SESSION['loggued_on_user']) {
-	echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='Q3' value='Delete from cart'></form>";
+	echo "<form method='post' action='changehtml2.php'><input class='button_add_to_cart' type='submit' name='Q3' value='Delete from cart'></form>";
 }
 ?>
 </div>
 <?php
-if (check('Q7')) {
+if (check2('Q7')) {
 	$exist = "display: block";
 } else{
 	$exist = "display: none";
@@ -292,12 +296,12 @@ echo "<div id='Q7' class='product_cart_block response clearfix' style='".$exist.
 <div class="cost">from €56,800</div>
 <?php
 if ($_SESSION['loggued_on_user']) {
-	echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='Q7' value='Delete from cart'></form>";
+	echo "<form method='post' action='changehtml2.php'><input class='button_add_to_cart' type='submit' name='Q7' value='Delete from cart'></form>";
 }
 ?>
 </div>
 <?php
-if (check('Q8')) {
+if (check2('Q8')) {
 	$exist = "display: block";
 } else{
 	$exist = "display: none";
@@ -318,12 +322,12 @@ echo "<div id='Q8' class='product_cart_block response clearfix' style='".$exist.
 <div class="cost">from €73,100</div>
 <?php
 if ($_SESSION['loggued_on_user']) {
-	echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='Q8' value='Delete from cart'></form>";
+	echo "<form method='post' action='changehtml2.php'><input class='button_add_to_cart' type='submit' name='Q8' value='Delete from cart'></form>";
 }
 ?>
 </div>
 <?php
-if (check('RS6')) {
+if (check2('RS6')) {
 	$exist = "display: block";
 } else{
 	$exist = "display: none";
@@ -344,12 +348,12 @@ echo "<div id='RS6' class='product_cart_block response clearfix' style='".$exist
 <div class="cost">from €101,950</div>
 <?php
 if ($_SESSION['loggued_on_user']) {
-	echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='RS6' value='Delete from cart'></form>";
+	echo "<form method='post' action='changehtml2.php'><input class='button_add_to_cart' type='submit' name='RS6' value='Delete from cart'></form>";
 }
 ?>
 </div>
 <?php
-if (check('RS7')) {
+if (check2('RS7')) {
 	$exist = "display: block";
 } else{
 	$exist = "display: none";
@@ -370,12 +374,12 @@ echo "<div id='RS7' class='product_cart_block response clearfix' style='".$exist
 <div class="cost">from €109,200</div>
 <?php
 if ($_SESSION['loggued_on_user']) {
-	echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='RS7' value='Delete from cart'></form>";
+	echo "<form method='post' action='changehtml2.php'><input class='button_add_to_cart' type='submit' name='RS7' value='Delete from cart'></form>";
 }
 ?>
 </div>
 <?php
-if (check('TTRS')) {
+if (check2('TTRS')) {
 	$exist = "display: block";
 } else{
 	$exist = "display: none";
@@ -396,7 +400,7 @@ echo "<div id='TTRS' class='product_cart_block response clearfix' style='".$exis
 <div class="cost">from €61,500</div>
 <?php
 if ($_SESSION['loggued_on_user']) {
-	echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='TTRS' value='Delete from cart'></form>";
+	echo "<form method='post' action='changehtml2.php'><input class='button_add_to_cart' type='submit' name='TTRS' value='Delete from cart'></form>";
 }
 ?>
 </div>

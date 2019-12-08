@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	error_reporting(0);
 	function do_cars($name, $do){
 		$fp = fopen('../private/cars.csv', 'r');
 		while (($array[] = fgetcsv($fp))!= FALSE)
