@@ -22,12 +22,14 @@
             <span></span>
         </label>
             <ul class="menu__box">
-                <li><a class="menu__item" href="#">Type1</a></li>
-                <li><a class="menu__item" href="#">Type2</a></li>
-                <li><a class="menu__item" href="#">Type3</a></li>
+                <li><a class="menu__item" href="#">A-class</a></li>
+                <li><a class="menu__item" href="#">Q-class</a></li>
+                <li><a class="menu__item" href="#">RS-class</a></li>
             </ul>
         </div>
-        <img src="../img/audi_logo.png" alt="audi logo" class="logo clearfix">
+	    <a href="index.php">
+		    <img src="../img/audi_logo.png" alt="audi logo" class="logo clearfix">
+	    </a>
         <div class="top_menu">
 	        <?php
 		        if ($_SESSION['loggued_on_user'] != "") {
