@@ -13,35 +13,26 @@
 </head>
 
 <body>
-    <div class="top" id="intro-top">
-        <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-            <span></span>
-        </label>
-            <ul class="menu__box">
-                <li><a class="menu__item" href="#">Type1</a></li>
-                <li><a class="menu__item" href="#">Type2</a></li>
-                <li><a class="menu__item" href="#">Type3</a></li>
-            </ul>
-        </div>
-        <img src="../img/audi_logo.png" alt="audi logo" class="logo clearfix">
-        <div class="top_menu">
-            <a href="login.html" class="top_button">Logout</a>
-            <!--        Вместо Profile писать имя пользователя-->
-            <a href="login.html" class="top_button">Profile</a>
-            <!--        Добавлять к корзине ": €[итоговая цена]"-->
-            <a href="login.html" class="top_button">Cart</a>
-        </div>
-    </div>
+<div class="top" id="intro-top">
+	<a href="index.php">
+		<img src="../img/audi_logo.png" alt="audi logo" class="logo clearfix">
+	</a>
+	<div class="top_menu">
+		<?php
+		if ($_SESSION['loggued_on_user'] != "") {
+			echo "<a href='logout.php' class='top_button'>Logout</a>";
+		}
+		else{
+			echo "<a href='login.html' class='top_button'>Login</a>";
+		}
+		?>
+	</div>
+</div>
     <div class="heading">
         <img src="https://www.audi.com//content/dam/gbp2/experience-audi/models-and-technology/production-models/1920x600_A189584_large_v2.jpg" alt="models">
         <!--    <h1>All models</h1>-->
     </div>
     <div class="container">
-        <div class="heading">
-            <h1>A-serial models</h1>
-        </div>
         <div id="A1" class="product_cart_block">
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a1/my-2019/1920x1080-gal-prop-tx/1920x1080_desktop_AA1_181001.jpg" alt="A1">
             <div class="product_title">
@@ -178,9 +169,6 @@
                 <input class="button_add_to_cart" type="submit" name="TT" value="Add to cart">
             </form>
         </div>
-        <div class="heading">
-            <h1>Q-serial models</h1>
-        </div>
         <div id="Q3" class="product_cart_block">
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/q3/my2019/1920x1080-gal-prop-tx/1920x1080_desktop_AQ3_181001.jpg" alt="Q3">
             <div class="product_title">
@@ -231,9 +219,6 @@
             <form method="post" action="addtocart">
                 <input class="button_add_to_cart" type="submit" name="Q8" value="Add to cart">
             </form>
-        </div>
-        <div class="heading">
-            <h1>R-/RS serial models</h1>
         </div>
         <div id="RS6" class="product_cart_block">
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/audi-sport/r-rs-serial-models/rs6-avant/1920x1080-desktop-ARS6_191013.jpg" alt="RS6">

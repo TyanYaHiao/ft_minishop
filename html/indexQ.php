@@ -1,12 +1,12 @@
 <?php
-session_start();
-?>
+	session_start();
+	?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Production Models</title>
+    <title>Q-serial models</title>
     <link href="../css/top.css" rel="stylesheet">
     <link href="../css/hamburger.css" rel="stylesheet">
     <link href="../css/body.css" rel="stylesheet">
@@ -15,91 +15,118 @@ session_start();
 </head>
 
 <body>
-<div class="top" id="intro-top">
-    <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
+    <div class="top" id="intro-top">
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
             <span></span>
         </label>
-        <ul class="menu__box">
-            <li><a class="menu__item" href="#">A-class</a></li>
-            <li><a class="menu__item" href="#">Q-class</a></li>
-            <li><a class="menu__item" href="#">RS-class</a></li>
-        </ul>
-    </div>
-    <a href="index.php">
-        <img src="../img/audi_logo.png" alt="audi logo" class="logo clearfix">
-    </a>
-    <div class="top_menu">
-        <?php
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#">A-class</a></li>
+                <li><a class="menu__item" href="#">Q-class</a></li>
+                <li><a class="menu__item" href="#">RS-class</a></li>
+            </ul>
+        </div>
+	    <a href="index.php">
+		    <img src="../img/audi_logo.png" alt="audi logo" class="logo clearfix">
+	    </a>
+        <div class="top_menu">
+	        <?php
 		        if ($_SESSION['loggued_on_user'] != "") {
 			        echo "<a href='logout.php' class='top_button'>Logout</a><a href='login.html' class='top_button'>Cart</a>";
-        }
-        else{
-        echo "<a href='login.html' class='top_button'>Login</a>";
-        }
-        ?>
+		        }
+		        else{
+		            echo "<a href='login.html' class='top_button'>Login</a>";
+                }
+	        ?>
+        </div>
     </div>
-</div>
     <div class="heading">
         <img src="https://www.audi.com//content/dam/gbp2/experience-audi/models-and-technology/production-models/1920x600_A189584_large_v2.jpg" alt="models">
         <!--    <h1>All models</h1>-->
     </div>
     <div class="container">
-
         <div class="heading">
-            <h1>R-/RS serial models</h1>
+            <h1>Q-serial models</h1>
         </div>
-        <div id="RS6" class="product_block response clearfix">
-            <img src="https://www.audi.com/content/dam/gbp2/experience-audi/audi-sport/r-rs-serial-models/rs6-avant/1920x1080-desktop-ARS6_191013.jpg" alt="RS6">
+	    <?php
+	    include ("check_count.php");
+	    if (check('Q3')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='Q3' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
+            <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/q3/my2019/1920x1080-gal-prop-tx/1920x1080_desktop_AQ3_181001.jpg" alt="Q3">
             <div class="product_title">
-                Audi RS 6
+                Audi Q3
             </div>
             <div class="product_ description">
-                Whether it’s for a business meeting or a family outing – say yes to the Audi RS 6 Avant.
+                The Audi Q3 family: the first SUV in the compact class. The Audi Q3 embodies versatility; a fun drive that's efficient on every road and track.
             </div>
             <div class="delimiter"></div>
             <div class="product_ specifications">
-                Fuel consumption combined*: 11.7–11.5 l/100km<br> CO₂-emissions combined*: 268–263 g/km
+                Fuel consumption combined*: 7.6–4.7 l/100km<br> CO₂-emissions combined*: 174–123 g/km
             </div>
-            <div class="cost">from €101,950</div>
-            <form method="post" action="addtocart">
-                <input class="button_add_to_cart" type="submit" name="RS6" value="Add to cart">
-            </form>
+            <div class="cost">from €31,200</div>
+		    <?php
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='Q3' value='Add to cart'></form>";
+		    }
+		    ?>
         </div>
-        <div id="RS7" class="product_block response clearfix">
-            <img src="https://www.audi.com//content/dam/gbp2/experience-audi/audi-sport/r-rs-serial-models/rs7_sportback/my2020/1920x1080_stage-mobile_ARS7_191005.jpg" alt="RS7">
+	    <?php
+	    if (check('Q7')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='Q7' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
+            <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/q7/my-2020/1920x1080_AQ7_191002.jpg" alt="Q7">
             <div class="product_title">
-                Audi RS 7
+                Audi Q7
             </div>
             <div class="product_ description">
-                Be wild for once, untamed, and live every moment to the full. Or would you rather make an elegant impression, poised and athletic?
+                The Audi Q7 embodies pure freedom. With its permanent all-wheel drive and a flexible interior concept, it is an ideal companion.
             </div>
             <div class="delimiter"></div>
             <div class="product_ specifications">
-                Fuel consumption combined*: 11.6–11.4 l/100km<br> CO₂-emissions combined*: 265–261 g/km
+                Fuel consumption combined*: 9.1–6.6 l/100km<br> CO₂-emissions combined*: 208–174 g/km
             </div>
-            <div class="cost">from €109,200</div>
-            <form method="post" action="addtocart">
-                <input class="button_add_to_cart" type="submit" name="RS7" value="Add to cart">
-            </form>
+            <div class="cost">from €56,800</div>
+		    <?php
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='Q7' value='Add to cart'></form>";
+		    }
+		    ?>
         </div>
-        <div id="TT RS" class="product_block response clearfix">
-            <img src="https://www.audi.com/content/dam/gbp2/experience-audi/audi-sport/r-rs-serial-models/tt-rs/Teaser.jpg" alt="TT RS">
+	    <?php
+	    if (check('Q8')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='Q8' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
+            <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/q8/my2019/1920x1080-gal-prop-tx/1920x1080_desktop_AQ8_181006.jpg" alt="Q8">
             <div class="product_title">
-                Audi TT RS
+                Audi Q8
             </div>
             <div class="product_ description">
-                Being well prepared means mastering numerous disciplines. The new Audi TT RS manages to do that with ease.
+                The Audi Q8 combines the elegance of a four-door luxury coupé with the versatility of an SUV. The new face of the Q family.
             </div>
             <div class="delimiter"></div>
             <div class="product_ specifications">
-                Fuel consumption combined*: 8.0–7.9 l/100km<br> CO₂-emissions combined*: 181 g/km
+                Fuel consumption combined*: 9.1–6.5 l/100km<br> CO₂-emissions combined*: 208–172 g/km
             </div>
-            <div class="cost">from €61,500</div>
-            <form method="post" action="addtocart">
-                <input class="button_add_to_cart" type="submit" name="TT_RS" value="Add to cart">
-            </form>
+            <div class="cost">from €73,100</div>
+		    <?php
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='Q8' value='Add to cart'></form>";
+		    }
+		    ?>
         </div>
     </div>
     <div class="footer" id="intro-footer">

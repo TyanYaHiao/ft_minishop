@@ -1,12 +1,12 @@
 <?php
-session_start();
-?>
+	session_start();
+	?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Production Models</title>
+    <title>A-serial models</title>
     <link href="../css/top.css" rel="stylesheet">
     <link href="../css/hamburger.css" rel="stylesheet">
     <link href="../css/body.css" rel="stylesheet">
@@ -15,32 +15,32 @@ session_start();
 </head>
 
 <body>
-<div class="top" id="intro-top">
-    <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
+    <div class="top" id="intro-top">
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
             <span></span>
         </label>
-        <ul class="menu__box">
-            <li><a class="menu__item" href="#">A-class</a></li>
-            <li><a class="menu__item" href="#">Q-class</a></li>
-            <li><a class="menu__item" href="#">RS-class</a></li>
-        </ul>
-    </div>
-    <a href="index.php">
-        <img src="../img/audi_logo.png" alt="audi logo" class="logo clearfix">
-    </a>
-    <div class="top_menu">
-        <?php
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#">A-class</a></li>
+                <li><a class="menu__item" href="#">Q-class</a></li>
+                <li><a class="menu__item" href="#">RS-class</a></li>
+            </ul>
+        </div>
+	    <a href="index.php">
+		    <img src="../img/audi_logo.png" alt="audi logo" class="logo clearfix">
+	    </a>
+        <div class="top_menu">
+	        <?php
 		        if ($_SESSION['loggued_on_user'] != "") {
 			        echo "<a href='logout.php' class='top_button'>Logout</a><a href='login.html' class='top_button'>Cart</a>";
-        }
-        else{
-        echo "<a href='login.html' class='top_button'>Login</a>";
-        }
-        ?>
+		        }
+		        else{
+		            echo "<a href='login.html' class='top_button'>Login</a>";
+                }
+	        ?>
+        </div>
     </div>
-</div>
     <div class="heading">
         <img src="https://www.audi.com//content/dam/gbp2/experience-audi/models-and-technology/production-models/1920x600_A189584_large_v2.jpg" alt="models">
         <!--    <h1>All models</h1>-->
@@ -49,7 +49,15 @@ session_start();
         <div class="heading">
             <h1>A-serial models</h1>
         </div>
-        <div id="A1" class="product_block response clearfix">
+        <?php
+            include ("check_count.php");
+            if (check('A1')) {
+	            $exist = "display: block";
+            } else{
+	            $exist = "display: none";
+            }
+            echo "<div id='A1' class='product_block response clearfix' style='".$exist."'>";
+        ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a1/my-2019/1920x1080-gal-prop-tx/1920x1080_desktop_AA1_181001.jpg" alt="A1">
             <div class="product_title">
                 Audi A1
@@ -62,11 +70,20 @@ session_start();
                 Fuel consumption combined*: 6.0–4.7 l/100km <br> CO₂-emissions combined*: 137–107 g/km
             </div>
             <div class="cost">from €21,700</div>
-            <form method="post" action="addtocart">
-                <input class="button_add_to_cart" type="submit" name="A1" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION['loggued_on_user']) {
+		        echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A1' value='Add to cart'></form>";
+            }
+		    ?>
         </div>
-        <div id="A3" class="product_block response clearfix">
+	    <?php
+	    if (check('A3')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='A3' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a3/my-2019/1920x1080-gal-prop/AA3_SB_161001_1-1920x1080.jpg" alt="A3">
             <div class="product_title">
                 Audi A3
@@ -79,11 +96,20 @@ session_start();
                 Fuel consumption combined*: 6.6–3.5 l/100km<br> CO₂-emissions combined*: 149–111 g/km
             </div>
             <div class="cost">from €24,300</div>
-            <form method="post" action="addtocart">
-                <input class="button_add_to_cart" type="submit" name="A3" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A3' value='Add to cart'></form>";
+		    }
+		    ?>
         </div>
-        <div id="A4" class="product_block response clearfix">
+	    <?php
+	    if (check('A4')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='A4' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a4/my-2020/1920x1080_AA4_L_191010.jpg" alt="A4">
             <div class="product_title">
                 Audi A4
@@ -96,11 +122,20 @@ session_start();
                 Fuel consumption combined*: 6.8–3.8 l/100km<br> CO₂-emissions combined*: 160–100 g/km
             </div>
             <div class="cost">from €30,200</div>
-            <form method="post" action="addtocart">
-                <input class="button_add_to_cart" type="submit" name="A4" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A4' value='Add to cart'></form>";
+		    }
+		    ?>
         </div>
-        <div id="A5" class="product_block response clearfix">
+	    <?php
+	    if (check('A5')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='A5' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a5/my2020/1920x1080_teaser_AA5_SB_191007.jpg" alt="A5">
             <div class="product_title">
                 Audi A5
@@ -113,11 +148,20 @@ session_start();
                 Fuel consumption combined*: 6–3.7 l/100km<br> CO₂-emissions combined*: 158–98 g/km
             </div>
             <div class="cost">from €35,500</div>
-            <form method="post" action="addtocart">
-                <input class="button_add_to_cart" type="submit" name="A5" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A5' value='Add to cart'></form>";
+		    }
+		    ?>
         </div>
-        <div id="A6" class="product_block response clearfix">
+	    <?php
+	    if (check('A6')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='A6' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a6/my-2019/1920x1080-gal-prop/1920x1080_desktop_%20CLASSIC_M01_SEDAN_COMP_09_FINAL_FLAT.jpg" alt="A6">
             <div class="product_title">
                 Audi A6
@@ -130,11 +174,20 @@ session_start();
                 Fuel consumption combined*: 7.6–4.1 l/100km<br> CO₂-emissions combined*: 174–108 g/km
             </div>
             <div class="cost">from €46,800</div>
-            <form method="post" action="addtocart">
-                <input class="button_add_to_cart" type="submit" name="A6" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A6' value='Add to cart'></form>";
+		    }
+		    ?>
         </div>
-        <div id="A7" class="product_block response clearfix">
+	    <?php
+	    if (check('A7')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='A7' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a7/my2019/mobile/1920x1080_desktop_AA7_17009.jpg" alt="A7">
             <div class="product_title">
                 Audi A7
@@ -147,11 +200,20 @@ session_start();
                 Fuel consumption combined*: 7.5–4.4 l/100km<br> CO₂-emissions combined*: 172–117 g/km
             </div>
             <div class="cost">from €56,800</div>
-            <form method="post" action="addtocart">
-                <input class="button_add_to_cart" type="submit" name="A7" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A7' value='Add to cart'></form>";
+		    }
+		    ?>
         </div>
-        <div id="A8" class="product_block response clearfix">
+	    <?php
+	    if (check('A8')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='A8' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/a8/my2019/desktop/1920x1080_teaser_AA8_171002.jpg" alt="A8">
             <div class="product_title">
                 Audi A8
@@ -164,11 +226,20 @@ session_start();
                 Fuel consumption combined*: 8.3–5.7 l/100km<br> CO₂-emissions combined*: 189–151 g/km
             </div>
             <div class="cost">from €73,100</div>
-            <form method="post" action="addtocart">
-                <input class="button_add_to_cart" type="submit" name="A8" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A8' value='Add to cart'></form>";
+		    }
+		    ?>
         </div>
-        <div id="TT" class="product_block response clearfix">
+	    <?php
+	    if (check('TT')) {
+		    $exist = "display: block";
+	    } else{
+		    $exist = "display: none";
+	    }
+	    echo "<div id='TT' class='product_block response clearfix' style='".$exist."'>";
+	    ?>
             <img src="https://www.audi.com/content/dam/gbp2/experience-audi/models-and-technology/production-models/tt/my2019/1920x1080-gal-prop-tx/1920x1080_desktop_ATT_181005.jpg" alt="TT">
             <div class="product_title">
                 Audi TT
@@ -181,11 +252,12 @@ session_start();
                 Fuel consumption combined*: 7.0–6.0 l/100km<br> CO₂-emissions combined*: 161–137 g/km
             </div>
             <div class="cost">from €38,900</div>
-            <form method="post" action="addtocart">
-                <input class="button_add_to_cart" type="submit" name="TT" value="Add to cart">
-            </form>
+		    <?php
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='TT' value='Add to cart'></form>";
+		    }
+		    ?>
         </div>
-
     </div>
     <div class="footer" id="intro-footer">
         <div class="footer_menu clearfix">
