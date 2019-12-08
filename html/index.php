@@ -95,8 +95,8 @@
             </div>
             <div class="cost">from €24,300</div>
 		    <?php
-		    if ($_SESSION[$loggued_on_user]) {
-			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A3\' value=\'Add to cart\'></form>";
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A3' value='Add to cart'></form>";
 		    }
 		    ?>
         </div>
@@ -121,8 +121,8 @@
             </div>
             <div class="cost">from €30,200</div>
 		    <?php
-		    if ($_SESSION[$loggued_on_user]) {
-			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A4\' value=\'Add to cart\'></form>";
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A4' value='Add to cart'></form>";
 		    }
 		    ?>
         </div>
@@ -147,8 +147,8 @@
             </div>
             <div class="cost">from €35,500</div>
 		    <?php
-		    if ($_SESSION[$loggued_on_user]) {
-			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A5\' value=\'Add to cart\'></form>";
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A5' value='Add to cart'></form>";
 		    }
 		    ?>
         </div>
@@ -173,8 +173,8 @@
             </div>
             <div class="cost">from €46,800</div>
 		    <?php
-		    if ($_SESSION[$loggued_on_user]) {
-			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A6\' value=\'Add to cart\'></form>";
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A6' value='Add to cart'></form>";
 		    }
 		    ?>
         </div>
@@ -199,8 +199,8 @@
             </div>
             <div class="cost">from €56,800</div>
 		    <?php
-		    if ($_SESSION[$loggued_on_user]) {
-			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A7\' value=\'Add to cart\'></form>";
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A7' value='Add to cart'></form>";
 		    }
 		    ?>
         </div>
@@ -225,8 +225,8 @@
             </div>
             <div class="cost">from €73,100</div>
 		    <?php
-		    if ($_SESSION[$loggued_on_user]) {
-			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'A8\' value=\'Add to cart\'></form>";
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='A8' value='Add to cart'></form>";
 		    }
 		    ?>
         </div>
@@ -251,8 +251,8 @@
             </div>
             <div class="cost">from €38,900</div>
 		    <?php
-		    if ($_SESSION[$loggued_on_user]) {
-			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'TT\' value=\'Add to cart\'></form>";
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='TT' value='Add to cart'></form>";
 		    }
 		    ?>
         </div>
@@ -280,8 +280,8 @@
             </div>
             <div class="cost">from €31,200</div>
 		    <?php
-		    if ($_SESSION[$loggued_on_user]) {
-			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'Q3\' value=\'Add to cart\'></form>";
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='Q3' value='Add to cart'></form>";
 		    }
 		    ?>
         </div>
@@ -306,8 +306,8 @@
             </div>
             <div class="cost">from €56,800</div>
 		    <?php
-		    if ($_SESSION[$loggued_on_user]) {
-			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'Q7\' value=\'Add to cart\'></form>";
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='Q7' value='Add to cart'></form>";
 		    }
 		    ?>
         </div>
@@ -332,8 +332,8 @@
             </div>
             <div class="cost">from €73,100</div>
 		    <?php
-		    if ($_SESSION[$loggued_on_user]) {
-			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'Q8\' value=\'Add to cart\'></form>";
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='Q8' value='Add to cart'></form>";
 		    }
 		    ?>
         </div>
@@ -361,8 +361,8 @@
             </div>
             <div class="cost">from €101,950</div>
 		    <?php
-		    if ($_SESSION[$loggued_on_user]) {
-			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'RS6\' value=\'Add to cart\'></form>";
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='RS6' value='Add to cart'></form>";
 		    }
 		    ?>
         </div>
@@ -387,8 +387,8 @@
             </div>
             <div class="cost">from €109,200</div>
 		    <?php
-		    if ($_SESSION[$loggued_on_user]) {
-			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'RS7\' value=\'Add to cart\'></form>";
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='RS7' value='Add to cart'></form>";
 		    }
 		    ?>
         </div>
@@ -413,8 +413,8 @@
             </div>
             <div class="cost">from €61,500</div>
 		    <?php
-		    if ($_SESSION[$loggued_on_user]) {
-			    echo "<form method=\'post\' action=\'changehtml.php\'><input class=\'button_add_to_cart\' type=\'submit\' name=\'TTRS\' value=\'Add to cart\'></form>";
+		    if ($_SESSION['loggued_on_user']) {
+			    echo "<form method='post' action='changehtml.php'><input class='button_add_to_cart' type='submit' name='TTRS' value='Add to cart'></form>";
 		    }
 		    ?>
         </div>
